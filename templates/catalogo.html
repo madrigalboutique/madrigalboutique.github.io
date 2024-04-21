@@ -223,7 +223,7 @@
             cards.forEach(card => {
                 const id = card.getAttribute('id');
                 if (categoriaSeleccionada === 'todos' || categoriaSeleccionada === id) {
-                    card.style.display = 'grid';
+                    card.style.display = '';
                 } else {
                     card.style.display = 'none';
                 }
