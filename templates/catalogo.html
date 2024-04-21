@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #F5F5F5;
+        }
+
+        .card {
+            background-color: #edece9;
+            width: 150px;
+            height: 350px;
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .details {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            width: 210px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Para que las tarjetas se envuelvan cuando el espacio es insuficiente */
+            margin-bottom: 50px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #a6967f;
+            color: #edece9;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Estilos para el label y el select */
+        label {
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .opciones {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .back {
+            padding: 10px;
+            background-color: #edece9;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .back:hover {
+            background-color: #d7d1c5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="/img/logo.png" alt="" style="height: auto; width: 400px;">
+    </div>
+
+    <h1 style="text-align: center;">Catálogo</h1>
+    
+    <div class="opciones">
+        <div style="text-align: left; margin-bottom: 20px; margin-left: 60px;">
+            <label for="categoria">Filtrar:</label>
+            <select name="categoria" id="categoria">
+                <option value="todos">Todos</option>
+                <option value="blusa">Blusas</option>
+                <option value="vestido">Vestidos</option>
+                <option value="pantalon">Pantalones</option>
+                <option value="falda">Faldas</option>
+                <option value="short">Shorts</option>
+            </select>
+        </div>
+
+        <div style="text-align: right; margin-bottom: 20px; margin-right: 60px;" >
+            <a class="back" href="../index.html">Regresar</a>
+        </div>
+    </div>
+
+    
+
+    <div class="container">
+        <div class="card" id="blusa">
+            <img src="../img/ropa/blusa_blanca.jpg" alt="Blusa Blanca">
+            <div class="details">
+                <h4>Blusa Blanca</h4>
+                <p>Tallas: M y L</p>
+                <p>Precio: $399</p>
+            </div>
+        </div>
+
+        <div class="card" id="blusa">
+            <img src="../img/ropa/blusa_cafe.jpg" alt="Blusa Cafe">
+            <div class="details">
+                <h4>Blusa Vino</h4>
+                <p>Tallas: L</p>
+                <p>Precio: $420</p>
+            </div>
+        </div>
+
+        <div class="card" id="blusa">
+            <img src="../img/ropa/blusa_vino.jpg" alt="Blusa Vino">
+            <div class="details">
+                <h4>Blusa Vino</h4>
+                <p>Tallas: S, M y L</p>
+                <p>Precio: $399</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_rayasrojas.jpg" alt="Vestido Rayas Rojas">
+            <div class="details">
+                <h4>Vestido Strapless Corto</h4>
+                <p>Tallas: S, M y L</p>
+                <p>Precio: $490</p>
+            </div>
+        </div>
+
+        <div class="card" id="falda">
+            <img src="../img/ropa/falda_arcoiris.jpg" alt="Falda Arcoiris">
+            <div class="details">
+                <h4>Falda Corta</h4>
+                <p>Tallas: S</p>
+                <p>Precio: $480</p>
+            </div>
+        </div>
+
+        <div class="card" id="pantalon">
+            <img src="../img/ropa/pantalon_cafecamello.jpg" alt="Pantalón Caqui">
+            <div class="details">
+                <h4>Pantalón Caqui</h4>
+                <p>Tallas: S</p>
+                <p>Precio: $499</p>
+            </div>
+        </div>
+
+        <div class="card" id="pantalon">
+            <img src="../img/ropa/pantalon_mezclilla.jpg" alt="Pantalón Mezclilla">
+            <div class="details">
+                <h4>Pantalón Azul</h4>
+                <p>Tallas: M y L</p>
+                <p>Precio: $499</p>
+            </div>
+        </div>
+
+        <div class="card" id="short">
+            <img src="../img/ropa/short_limon.JPG" alt="Short Limon">
+            <div class="details">
+                <h4>Short Verde</h4>
+                <p>Tallas: L</p>
+                <p>Precio: $480</p>
+            </div>
+        </div>
+
+        <div class="card" id="jumper">
+            <img src="../img/ropa/jumper_cafe.jpg" alt="Jumper Cafe">
+            <div class="details">
+                <h4>Jumper Cafe</h4>
+                <p>Tallas: L</p>
+                <p>Precio: $520</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <footer>
+        <p>
+            COPYRIGHT © 2024 MADRIGAL BOUTIQUE
+        </p>
+    </footer>
+
+    <script>
+        // Funcion para filtrar las tarjetas por categoría
+        document.getElementById('categoria').addEventListener('change', function() {
+            const categoriaSeleccionada = this.value;
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const id = card.getAttribute('id');
+                if (categoriaSeleccionada === 'todos' || categoriaSeleccionada === id) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

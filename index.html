@@ -13,14 +13,9 @@
 
         .logo {
             text-align: center;
-            margin-top: 110px;
+            margin-top: 20%;
             font-size: 20px;
             color: #F5F5F5;
-        }
-
-        section {
-            margin-top: 4%;
-            font-size: 20px;
         }
 
         a {
@@ -29,6 +24,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 4%;
+            font-size: 20px;
         }
 
         img {
@@ -36,9 +33,14 @@
             height: 30px;
         }
 
+        
+        .ico {
+            width: 30px;
+            margin-right: 10px;
+        }
+
         .opc {
             cursor: pointer;
-            display: block;
             border-radius: 20px;
             padding: 20px;
             width: 300px;
@@ -52,7 +54,7 @@
 
         }
 
-        section:hover {
+        a:hover {
             background-color: #d7d1c5;
             cursor: pointer;
         }
@@ -74,29 +76,33 @@
     </div>
 
     <div class="container">
-        <section class="opc">
-            <a href="https://api.whatsapp.com/send?phone=+523141351789&text=Holaa...%F0%9F%A4%8D">
-                <img src="/img/whatsapp.png" alt="">+52 314 135 1789
-            </a>
-        </section>
-    
-        <section class="opc">
-            <a href="https://www.instagram.com/madrigal_btq/?fbclid=IwAR2E55H6AQGjvYtvxlL2bTTHlRTYtLS45i4dzEQE01zay3m50Qn457-GRDs">
-                <img src="/img/instagram.png" alt="">madrigal_btq
-            </a>
-        </section>
-    
-        <section class="opc">
-            <a href="https://www.facebook.com/profile.php?id=100086816432038&mibextid=LQQJ4d">
-                <img src="/img/facebook.png" alt="">Madrigal Boutique
-            </a>
-        </section>
-    
-        <section class="opc">
-            <a href="mailto:madrigalboutique10@gmail.com">
-                <img src="/img/correo.png" alt=""> madrigalboutique10@gmail.com
-            </a>
-        </section>
+
+        <a href="./templates/catalogo.html" class="opc">
+            <svg class="ico" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cfa68e" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            </svg>
+            Catálogo
+        </a>
+
+        <a class="opc" href="https://api.whatsapp.com/send?phone=+523141351789&text=Holaa...%F0%9F%A4%8D">
+            <img src="/img/whatsapp.png" alt="">
+            +52 314 135 1789
+        </a>
+
+        <a class="opc" href="https://www.instagram.com/madrigal_btq/?fbclid=IwAR2E55H6AQGjvYtvxlL2bTTHlRTYtLS45i4dzEQE01zay3m50Qn457-GRDs">
+            <img src="/img/instagram.png" alt="">
+            madrigal_btq
+        </a>
+
+        <a class="opc" href="https://www.facebook.com/profile.php?id=100086816432038&mibextid=LQQJ4d">
+            <img src="/img/facebook.png" alt="">
+            Madrigal Boutique
+        </a>
+
+        <a class="opc" href="mailto:madrigalboutique10@gmail.com">
+            <img src="/img/correo.png" alt=""> 
+            madrigalboutique10@gmail.com
+        </a>
     </div>
 
     <footer>
