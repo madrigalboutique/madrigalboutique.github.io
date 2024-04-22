@@ -51,7 +51,7 @@
             align-items: center;
             flex-wrap: wrap;
             /* Para que las tarjetas se envuelvan cuando el espacio es insuficiente */
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         footer {
@@ -61,7 +61,7 @@
             height: 50px;
             background-color: #a6967f;
             color: #edece9;
-            
+
             text-align: center;
         }
 
@@ -109,6 +109,19 @@
             background-color: #d7d1c5;
             cursor: pointer;
         }
+
+        /* Estilos para los botones de paginación */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+
+        .pagination button {
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -129,6 +142,9 @@
                 <option value="pantalon">Pantalones</option>
                 <option value="falda">Faldas</option>
                 <option value="short">Shorts</option>
+                <option value="jumper">Jumpers</option>
+                <option value="camisa">Camisas</option>
+                <option value="conjunto">Conjuntos</option>
             </select>
         </div>
 
@@ -136,8 +152,6 @@
             <a class="back" href="../index.html">Regresar</a>
         </div>
     </div>
-
-
 
     <div class="container">
         <div class="card" id="blusa">
@@ -221,7 +235,164 @@
             </div>
         </div>
 
+        <div class="card" id="blusa">
+            <img src="../img/ropa/blusa_sin mangas.JPG" alt="Blusa Sin Mangas">
+            <div class="details">
+                <h5>Blusa Sin Mangas</h5>
+                <p>Tallas: L</p>
+                <p>Precio: $490</p>
+            </div>
+        </div>
 
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_rosa.jpg" alt="Vestido Rosa">
+            <div class="details">
+                <h5>Vestido Rosa</h5>
+                <p>Tallas: S</p>
+                <p>Precio: $480</p>
+            </div>
+        </div>
+
+        <div class="card" id="camisa">
+            <img src="../img/ropa/camisa_rayas.JPG" alt="Camisa Rayas">
+            <div class="details">
+                <h5>Camisa Rayas</h5>
+                <p>Tallas: 1X</p>
+                <p>Precio: $520</p>
+            </div>
+        </div>
+
+        <div class="card" id="conjunto">
+            <img src="../img/ropa/conjunto_topfalda.JPG" alt="Conjunto Top/Falda">
+            <div class="details">
+                <h5>Conjunto Top/Falda</h5>
+                <p>Tallas: M</p>
+                <p>Precio: $820</p>
+            </div>
+        </div>
+
+        <div class="card" id="conjunto">
+            <img src="../img/ropa/conjunto_topfaldaazul.JPG" alt="Conjunto Top/Falda">
+            <div class="details">
+                <h5>Conjunto Top/Falda</h5>
+                <p>Tallas: S</p>
+                <p>Precio: $720</p>
+            </div>
+        </div>
+
+        <div class="card" id="pantalon">
+            <img src="../img/ropa/pantalon_vestir.JPG" alt="Pantalon Rosa">
+            <div class="details">
+                <h5>Pantalon de Vestir</h5>
+                <p>Tallas: S</p>
+                <p>Precio: $590</p>
+            </div>
+        </div>
+
+        <div class="card" id="short">
+            <img src="../img/ropa/short_lino.JPG" alt="Short Lino">
+            <div class="details">
+                <h5>Short de Lino</h5>
+                <p>Tallas: S</p>
+                <p>Precio: $299</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_azul.JPG" alt="Vestido Azul">
+            <div class="details">
+                <h5>Vestido Corto</h5>
+                <p>Tallas: L</p>
+                <p>Precio: $440</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_corto.JPG" alt="Vestido Corto">
+            <div class="details">
+                <h5>Vestido Corto</h5>
+                <p>Tallas: M</p>
+                <p>Precio: $640</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_largo.JPG" alt="Vestido Largo">
+            <div class="details">
+                <h5>Vestido Largo</h5>
+                <p>Tallas: L</p>
+                <p>Precio: $580</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_midi.JPG" alt="Vestido Midi">
+            <div class="details">
+                <h5>Vestido Midi</h5>
+                <p>Tallas: S, M y L</p>
+                <p>Precio: $620</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_panacorto.JPG" alt="Vestido Pana Corto">
+            <div class="details">
+                <h5>Vestido Pana Corto</h5>
+                <p>Tallas: M</p>
+                <p>Precio: $620</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_rayas.JPG" alt="Vestido Rayas">
+            <div class="details">
+                <h5>Vestido Rayas</h5>
+                <p>Tallas: M y L/p>
+                <p>Precio: $480</p>
+            </div>
+        </div>
+
+        <div class="card" id="vestido">
+            <img src="../img/ropa/vestido_verde.JPG" alt="Vestido Verde">
+            <div class="details">
+                <h5>Vestido Verde</h5>
+                <p>Tallas: S</p>
+                <p>Precio: $620</p>
+            </div>
+        </div>
+
+        <div class="card" id="bata">
+            <img src="../img/ropa/bata_corta.JPG" alt="Bata Corta">
+            <div class="details">
+                <h5>Bata Corta</h5>
+                <p>Tallas: L</p>
+                <p>Precio: $580</p>
+            </div>
+        </div>
+
+        <div class="card" id="blusa">
+            <img src="../img/ropa/blusa_negra.JPG" alt="Blusa Negra">
+            <div class="details">
+                <h5>Blusa Negra</h5>
+                <p>Tallas: XG</p>
+                <p>Precio: $320</p>
+            </div>
+        </div>
+
+        <div class="card" id="blusa">
+            <img src="../img/ropa/blusa_rayas.JPG" alt="Blusa Rayas">
+            <div class="details">
+                <h5>Blusa Rayas</h5>
+                <p>Tallas: 2X</p>
+                <p>Precio: $420</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pagination">
+        <button id="btnAnterior" style="display: none;">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
     </div>
 
     <footer>
@@ -245,6 +416,56 @@
                 }
             });
         });
+
+        // Función para paginar las tarjetas
+        const cards = document.querySelectorAll('.card');
+        const cardContainer = document.getElementById('cardContainer');
+        const btnAnterior = document.getElementById('btnAnterior');
+        const btnSiguiente = document.getElementById('btnSiguiente');
+        const cardsPerPage = 10;
+        let currentPage = 1;
+
+        // Mostrar las primeras 10 tarjetas al cargar la página
+        showPage(currentPage);
+
+        // Mostrar la página siguiente
+        btnSiguiente.addEventListener('click', () => {
+            currentPage++;
+            showPage(currentPage);
+        });
+
+        // Mostrar la página anterior
+        btnAnterior.addEventListener('click', () => {
+            currentPage--;
+            showPage(currentPage);
+        });
+
+        // Función para mostrar las tarjetas de una página específica
+        function showPage(page) {
+            const startIndex = (page - 1) * cardsPerPage;
+            const endIndex = startIndex + cardsPerPage;
+
+            cards.forEach((card, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Ocultar o mostrar los botones de paginación según corresponda
+            if (currentPage === 1) {
+                btnAnterior.style.display = 'none';
+            } else {
+                btnAnterior.style.display = '';
+            }
+
+            if (endIndex >= cards.length) {
+                btnSiguiente.style.display = 'none';
+            } else {
+                btnSiguiente.style.display = '';
+            }
+        }
     </script>
 </body>
 
