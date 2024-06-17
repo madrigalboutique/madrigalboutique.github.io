@@ -53,6 +53,10 @@
             align-items: center;
         }
 
+        svg {
+            margin-right: 10px;
+        }
+
         a:hover {
             background-color: #d7d1c5;
             cursor: pointer;
@@ -77,12 +81,7 @@
 
     <div class="container">
 
-        <a href="./templates/catalogo.html" class="opc">
-            <svg class="ico" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cfa68e" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-            </svg>
-            Catálogo
-        </a>
+        
 
         <a class="opc" href="https://api.whatsapp.com/send?phone=+523141351789&text=Holaa...%F0%9F%A4%8D">
             <img src="/img/whatsapp.png" alt="">
@@ -102,6 +101,19 @@
         <a class="opc" href="mailto:madrigalboutique10@gmail.com">
             <img src="/img/correo.png" alt=""> 
             madrigalboutique10@gmail.com
+        </a>
+
+        <a href="/contacto.vcf" download class="opc">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-address-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cfa68e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
+                <path d="M10 16h6" />
+                <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M4 8h3" />
+                <path d="M4 12h3" />
+                <path d="M4 16h3" />
+            </svg>
+            Agregar Contacto
         </a>
     </div>
 
