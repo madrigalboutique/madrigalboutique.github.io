@@ -103,8 +103,8 @@
             madrigalboutique10@gmail.com
         </a>
 
-        <a href="/contact.vcf" download class="opc">
-            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-address-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cfa68e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <a id="addContactLink" class="opc">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cfa68e" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
                 <path d="M10 16h6" />
@@ -122,5 +122,25 @@
             COPYRIGHT © 2024 MADRIGAL BOUTIQUE
         </p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var addContactLink = document.getElementById('addContactLink');
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                addContactLink.href = 'intent://contacts?action=add&name=Carmina%20Murillo&phone=+523141351789&email=madrigalboutique10@gmail.com#Intent;scheme=contacts;package=com.android.contacts;end';
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                addContactLink.href = 'data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Carmina%20Murillo%0AORG:Madrigal%20Boutique%0ATEL;TYPE=CELL:+52-314-135-1789%0AEMAIL:madrigalboutique10@gmail.com%0AEND:VCARD';
+                addContactLink.download = 'contacto.vcf';
+            } else {
+                // Fallback for other platforms
+                addContactLink.href = '#';
+                addContactLink.onclick = function () {
+                    alert('Su dispositivo no es compatible con la adición automática de contactos. Por favor, agregue el contacto manualmente.');
+                };
+            }
+        });
+    </script>
 </body>
 </html>
