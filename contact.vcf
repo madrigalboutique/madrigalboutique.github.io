@@ -1,9 +1,7 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Madrigal;Carmina;;;
-FN:Carmina Madrigal
+FN:Carmina Murillo
 ORG:Madrigal Boutique
 TEL;TYPE=CELL:+52-314-135-1789
-EMAIL;TYPE=INTERNET:madrigalboutique10@gmail.com
+EMAIL:madrigalboutique10@gmail.com
 END:VCARD
-
