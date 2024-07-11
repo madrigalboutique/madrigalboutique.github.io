@@ -17,7 +17,7 @@
 
         .logo {
             text-align: center;
-            margin-top: 18%;
+            margin-top: 8%;
             font-size: 20px;
             color: #F5F5F5;
         }
@@ -56,7 +56,6 @@
             justify-content: center;
             align-items: center;
             flex-grow: 1;
-            margin-top: -100px;
         }
 
         svg {
@@ -75,15 +74,38 @@
             text-align: center;
             padding: 10px 0;
         }
+
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: transform 2s ease-out, opacity 2s ease-out;
+        }
+
+        .preloader.hidden {
+            transform: translateY(-100%);
+            opacity: 0;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
-    
+    <div class="preloader">
+        <img src="/img/logo.png" alt="Logo" style="height: auto; width: 400px;">
+    </div>
+
     <div class="container">
         <div class="logo">
             <img src="/img/logo.png" alt="" style="height: auto; width: 400px;">
         </div>
-
+        
         <a class="opc" href="https://api.whatsapp.com/send?phone=+523141351789&text=Holaa...%F0%9F%A4%8D">
             <img src="/img/whatsapp.png" alt="">
             +52 314 135 1789
@@ -123,6 +145,15 @@
             COPYRIGHT © 2024 MADRIGAL BOUTIQUE
         </p>
     </footer>
+
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add('hidden');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 2000); // 2 seconds to match the transition time
+        });
+    </script>
 </body>
 </html>
-
