@@ -9,6 +9,7 @@
             background-color: #F5F5F5;
             font-family: 'Roboto', sans-serif;
             margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -16,21 +17,29 @@
 
         .logo {
             text-align: center;
-            margin: 20px 0;
+            margin-top: 8%;
             font-size: 20px;
-            color: #000;
+            color: #F5F5F5;
         }
 
-        .logo img {
-            height: auto;
-            width: 400px;
-        }
-
-        .container {
+        a {
+            text-decoration: none;
+            color: #000000;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-top: 10%;
+            font-size: 16px;
+        }
+
+        img {
+            margin-right: 10px;
+            height: 30px;
+        }
+
+        .ico {
+            width: 30px;
+            margin-right: 10px;
         }
 
         .opc {
@@ -39,23 +48,24 @@
             padding: 20px;
             width: 270px;
             background-color: #edece9;
+        }
+
+        .container {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #000000;
-            font-size: 16px;
+            align-items: center;
+            flex-grow: 1;
+            margin-top: -100px;
         }
 
-        .opc img,
-        .opc svg {
+        svg {
             margin-right: 10px;
-            height: 30px;
         }
 
-        .opc:hover {
+        a:hover {
             background-color: #d7d1c5;
+            cursor: pointer;
         }
 
         footer {
@@ -68,47 +78,51 @@
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="/img/logo.png" alt="Madrigal Boutique Logo">
-    </div>
-
+    
     <div class="container">
-        <a href="https://api.whatsapp.com/send?phone=+523141351789&text=Holaa...%F0%9F%A4%8D" class="opc">
-            <img src="/img/whatsapp.png" alt="WhatsApp">
+        <div class="logo">
+            <img src="/img/logo.png" alt="" style="height: auto; width: 400px;">
+        </div>
+        
+        <a class="opc" href="https://api.whatsapp.com/send?phone=+523141351789&text=Holaa...%F0%9F%A4%8D">
+            <img src="/img/whatsapp.png" alt="">
             +52 314 135 1789
         </a>
 
-        <a href="https://www.instagram.com/madrigal_btq/?fbclid=IwAR2E55H6AQGjvYtvxlL2bTTHlRTYtLS45i4dzEQE01zay3m50Qn457-GRDs" class="opc">
-            <img src="/img/instagram.png" alt="Instagram">
+        <a class="opc" href="https://www.instagram.com/madrigal_btq/?fbclid=IwAR2E55H6AQGjvYtvxlL2bTTHlRTYtLS45i4dzEQE01zay3m50Qn457-GRDs">
+            <img src="/img/instagram.png" alt="">
             madrigal_btq
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=100086816432038&mibextid=LQQJ4d" class="opc">
-            <img src="/img/facebook.png" alt="Facebook">
+        <a class="opc" href="https://www.facebook.com/profile.php?id=100086816432038&mibextid=LQQJ4d">
+            <img src="/img/facebook.png" alt="">
             Madrigal Boutique
         </a>
 
-        <a href="mailto:madrigalboutique10@gmail.com" class="opc">
-            <img src="/img/correo.png" alt="Correo Electrónico">
+        <a class="opc" href="mailto:madrigalboutique10@gmail.com">
+            <img src="/img/correo.png" alt=""> 
             madrigalboutique10@gmail.com
         </a>
 
         <a href="/contact.vcf" download class="opc">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cfa68e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"/>
-                <path d="M10 16h6"/>
-                <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
-                <path d="M4 8h3"/>
-                <path d="M4 12h3"/>
-                <path d="M4 16h3"/>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
+                <path d="M10 16h6" />
+                <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M4 8h3" />
+                <path d="M4 12h3" />
+                <path d="M4 16h3" />
             </svg>
             Agregar Contacto
         </a>
     </div>
 
     <footer>
-        <p>COPYRIGHT © 2024 MADRIGAL BOUTIQUE</p>
+        <p>
+            COPYRIGHT © 2024 MADRIGAL BOUTIQUE
+        </p>
     </footer>
 </body>
 </html>
+
